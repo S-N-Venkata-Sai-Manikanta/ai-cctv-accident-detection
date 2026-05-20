@@ -1,7 +1,6 @@
 services:
   - type: web
     name: accident-backend
-    plan: free
     runtime: node
     rootDir: backend
     buildCommand: npm install
@@ -9,7 +8,6 @@ services:
 
   - type: web
     name: accident-ai-service
-    plan: free
     runtime: python
     rootDir: ai-service
     buildCommand: pip install -r requirements.txt
@@ -17,7 +15,6 @@ services:
 
   - type: web
     name: accident-frontend
-    plan: free
     runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
